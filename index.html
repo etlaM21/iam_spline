@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I*AM Previews</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        boday {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello I*AM</h1>
+    <main>
+        <div class="preview-wrapper">
+            <h1>Displacement</h1>
+            <spline-viewer url="https://prod.spline.design/CEUWyGOQ5gGBEWa8/scene.splinecode"></spline-viewer>
+            <p>This is some text bla bla bla.</p>
+        </div>
+    </main>
 </body>
 </html>

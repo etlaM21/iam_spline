@@ -11,20 +11,64 @@
             padding: 0;
         }
 
-        boday {
+        body {
             background-color: black;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .element {
+            max-height: 100vh;
+            margin: 25px;
+        }
+
+        .preview-wrapper {
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 100%);
+            border-radius: 10px;
+            border: 1px solid #7d7d7d;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: normal;
+            align-content: normal;
+        }
+
+        .preview-wrapper:nth-child(1) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+        }
+
+        .preview-wrapper:nth-child(2) {
+            display: block;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: flex-start;
+            order: 0;
+
+            background: rgb(80,50,0);
+            background: radial-gradient(circle, rgba(80,50,0,1) 0%, rgba(255,200,0,1) 100%);
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Hello I*AM</h1>
     <main>
-        <div class="preview-wrapper">
+        <div class="element">
             <h1>Displacement</h1>
-            <spline-viewer url="https://prod.spline.design/CEUWyGOQ5gGBEWa8/scene.splinecode"></spline-viewer>
-            <p>This is some text bla bla bla.</p>
+            <div class="preview-wrapper">
+                <spline-viewer url="https://prod.spline.design/CEUWyGOQ5gGBEWa8/scene.splinecode"></spline-viewer>
+                <p>This is some text bla bla bla.</p>
+            </div>
         </div>
     </main>
 </body>

@@ -17,6 +17,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1 {
+            text-align: center;
+        }
+
         .element {
             max-height: 100vh;
             margin: 25px;
@@ -37,12 +41,11 @@
 
         .preview-wrapper spline-viewer {
             display: block;
-            flex-grow: 0;
+            flex-grow: 1;
             flex-shrink: 1;
-            flex-basis: auto;
+            flex-basis: 75%;
             align-self: auto;
             order: 0;
-            width: 75%;
         }
 
         .preview-wrapper p{
@@ -68,7 +71,7 @@
     <h1>Hello I*AM</h1>
     <main>
         <div class="element">
-            <h1>Displacement</h1>
+            <h2>Displacement</h2>
             <div class="preview-wrapper">
                 <spline-viewer url="https://prod.spline.design/CEUWyGOQ5gGBEWa8/scene.splinecode"></spline-viewer>
                 <p>This is some text bla bla bla.</p>
